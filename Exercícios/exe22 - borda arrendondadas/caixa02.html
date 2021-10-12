@@ -1,0 +1,125 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+       /* h1 {
+            box-shadow: inset 2px 1px 14px 6px rgba(0,0,0,0.5);
+        } */
+        /*se quiser uma sombra interna, se tirar o inset
+            fica externa*/
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+            /* primeixo 1px é o deslocamento horizontal
+               segundo  1px é o deslocamento vertical 
+               terceiro 1px é o espalhamento 
+               quarto   black é a sombra
+            */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px ;
+         
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+           /* border-radius: 20px 30px 40px 50px;*/
+           /* border-radius: 20px para todas as bordas*/
+           /*Seria as bordas no sentido abaixo é possível 
+           ver no devtool*/
+           /*border-top-left-radius: 20px;
+           border-top-right-radius: 30px;
+           border-bottom-right-radius: 40px;
+           border-bottom-left-radius: 50px;*/
+            
+        }
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: px;
+            margin: 0px;
+            
+        }
+
+        footer > p {    
+            margin: 0px;
+        }
+        /*Apenas exemplo abaixo*/
+       /* div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }*/
+    </style>
+</head>
+<body> <!-- Estrutura de um site hoje -->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article><!-- É possíel separar por section 
+            com artigo-->
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus aperiam cupiditate aliquam repellendus eum, 
+                    in odio alias commodi laborum minima aspernatur enim? Aspernatur, cum ratione molestias voluptas ex incidunt.
+                     Mollitia!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Cursoemvideo</p>
+    </footer>
+    
+    <!--Exemplo de uma bola no site-->
+    <!--<div id="bola"></div>-->
+</body>
+</html>

@@ -1,0 +1,113 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ /*Box-level*/
+
+            /*Para colocar o h1 em uma linha basta utilizar o display*/
+            /*display: inline*/
+            /*Porém deve ser desconsidera */
+            
+            background-color: lightgray;
+            height: 300px;
+            width:  300px;
+           /*Esse bloco abaixo pode ser simplificado 
+           com shorts-rants, onde pose ser feito tudo 
+           em uma linha.*/
+           /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            */
+
+            /*Forma simplificada conforme acima, porém tem que 
+            ser na ordem de cima o informado*/
+            border: 10px solid darkslategray;
+           
+           /*Esse bloco abaixo pode ser simplificado 
+           com shorts-rants, onde pose ser feito tudo 
+           em uma linha.*/
+           /*
+            padding-top:    10px;
+            padding-right:  10px;
+            padding-bottom: 10px;
+            padding-left:   10px;
+            */
+
+             /*Forma simplificada conforme acima, porém tem que 
+            ser na ordem de cima o informado*/
+           /* padding: 10px 10px 10px 10px;*/
+            padding: 10px; /*quando for tudo igual*/
+
+
+
+            /*Esse bloco abaixo pode ser simplificado 
+           com shorts-rants, onde pose ser feito tudo 
+           em uma linha.*/
+           /*
+            margin-top:    20px;
+            margin-right:  20px;
+            margin-bottom: 40px;
+            margin-left:   20px;
+            */
+           /* margin: 20px 20px 40px 20px; /*Forma simplificada*/
+            margin: 20px auto 20px auto; /*para margens 
+            direita e esquerda ficarem centralizadas*/
+
+            /*Não é uma borda o outline*/
+            /*Esse bloco abaixo pode ser simplificado 
+           com shorts-rants, onde pose ser feito tudo 
+           em uma linha.*/
+           /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            */
+            
+            outline: 5px dashed salmon;/*Forma simplificada*/
+
+            /*Desta forma fica sempre no meio da tela
+            indenpendente do texto*/
+          /*  margin: auto;*/
+           
+        }
+        a{ /*inline-level*/
+
+
+             /*Esse bloco abaixo pode ser simplificado 
+           com shorts-rants, onde pose ser feito tudo 
+           em uma linha.*/
+           /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+           */
+            /*Forma simplificada*/
+/*            display: block;*/ 
+/*Colocando um display é possível mudar a características do 
+display*/
+            border: 10px solid red;
+
+             /*Esse bloco abaixo pode ser simplificado 
+           com shorts-rants, onde pose ser feito tudo 
+           em uma linha.*/
+           /*
+            padding-top:    10px;
+            padding-right:  10px;
+            padding-bottom: 10px;
+            padding-left:   10px;
+            */ 
+             /*Forma simplificada*/
+             padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#"> links
+        são exemplos de caixas inline-level </a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

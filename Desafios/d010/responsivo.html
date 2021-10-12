@@ -1,0 +1,63 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+<style>
+    body {
+        background-color: gray;
+    }
+    main {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+/*Forma de deixar responsivo, colocando um minimo de 
+de width e máximo, 320 porque são os celulares menores
+e acordado que o tamanho maior ideal seria 800x 
+a margin é para centralizar o conteúdo no centro caso
+a tela seja muito grande.*/
+        min-width: 280;
+        max-width: 800px;
+        margin: auto;
+    }
+    
+    img {/*Neste caso o tamanho da imagem*/
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Iste voluptatem deleniti 
+            temporibus vero repellat aliquam aperiam quas 
+            repudiandae animi sapiente soluta dolore 
+            saepe ea magni, a quia perspiciatis 
+            hic laborum! Lorem ipsum dolor sit, amet 
+            consectetur adipisicing elit. Nesciunt 
+            obcaecati consectetur repellendus excepturi,
+        </p>
+            <!--Para ser responsivo com imagem é possível
+            configurar uma largura maxima chamar outra imagem 
+            menor-->
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+                <img src="imagens/irina-blok.jpg" alt="Irina Block"> 
+            </picture>
+        <p>expedita ipsa incidunt eligendi corrupti 
+            enim cupiditate sequi vel. Sunt dignissimos 
+            reprehenderit nostrum vel excepturi? 
+            Repudiandae, officiis. Lorem ipsum dolor 
+            sit amet consectetur adipisicing elit. 
+            Dolores dolor voluptatem aliquid harum ad,
+             totam laboriosam adipisci temporibus 
+             debitis nam veritatis ducimus laborum! 
+             Totam porro nam impedit labore, esse
+              eligendi?
+        </p>
+        
+    </main>
+</body>
+</html>

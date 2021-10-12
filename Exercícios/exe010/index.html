@@ -1,0 +1,29 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links externos</h1>
+    <p>
+        Você pode acesser 
+        <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">o repositório público do Professor no github</a>
+        <!-- Usando o target e o rel ele abre outra aba, se fizer o link apenas ele sobrepões o site.-->
+    </p>
+    <p>Você também pode acessar o pelo <a href="https://youtube.com/cursoemvideo/">canal gratuito</a></p>
+    <!-- Usando com o href acima ele sobrepõe o site.-->
+
+    <h2>Usando links internos</h2>
+    <p>Está é a primeira página do site. Se você quiser, pode 
+        acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página.</a>
+           <!-- o rel dá um valor semantico e facilita nos mecanismos de busca do google.-->
+    </p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <h1>Links para Download</h1> 
+    <ul>
+      <li><a href="livro/renovação_felipe.pdf" download="renovação_felipe.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+      <li><a href="livro/renovação_felipe.zip" download="renovação_felipe.zip" type="application/zip">Livro em zip</a></li> 
+   </ul>
+</body>
+</html>

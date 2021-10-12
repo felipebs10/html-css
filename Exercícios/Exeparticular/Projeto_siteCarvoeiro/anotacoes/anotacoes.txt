@@ -1,0 +1,20 @@
+===Anotações site da Carvoeiro===
+
+Cores da Carvoeiro
+Vermelho
+Notacao em HTML dc1219
+R 86,3
+G 7,1
+B 9,8
+
+Branco
+Notacao em HTML  ffffff
+R 100
+G 100
+B 100 
+
+Preto
+Notacao em HTML 010101
+R 0,4
+G 0,4
+B 0,4
