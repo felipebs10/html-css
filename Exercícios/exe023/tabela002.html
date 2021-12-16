@@ -28,6 +28,12 @@
         text-align: right;
     }
 
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+    }
 
 </style>
 
@@ -36,24 +42,29 @@
     <h1>Usando tabelas Grandes</h1>
     <!--Anatomia para tabelas grandes
     table
+      CAPTION
       thead 
         tr, td, th
       tbody
         tr, td, th
        tfoot // não é obrigatório
          tr, td, th 
+
+         Sempre que for um título, como é o Estado na tabela. 
+         Sempre que for um dado, é TD, exemplo nome do estado e a população
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption><!--sempre fica no ínicio, mesmo se estive lá embaixo-->
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tfoot><!--o tfoot fica sempre no rodapé-->
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
