@@ -24,6 +24,28 @@
         color: white;
     }
 
+   /*Todas as linhas de 2 em duas.*/
+    /* tbody > tr:nth-child(2n) {
+        background-color: lightgray;
+    }*/ 
+
+    /*Caso queira especificar cores
+    de par e ímpar*/
+
+    tbody > tr:nth-child(odd){ /*Lugar de odd colocar 2n-1*/
+        background-color: white;
+        
+        /*Se quiser diferenciar*/
+        /* font-weight: bold;*/
+        
+    }
+
+    tbody > tr:nth-child(even){/*Lugar de even colocar 2n*/
+        background-color: lightgray;
+      /*Se quiser diferenciar*/
+      /*  text-decoration: underline;*/
+    }
+
     td.num {
         text-align: right;
     }
