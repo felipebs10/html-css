@@ -12,6 +12,9 @@
     table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+          /*Em quanto rolar a tabela
+    fica vendo o título da coluna*/
     }
 
     td, th {
@@ -19,6 +22,16 @@
         padding: 10px;
     }
 
+    /*Em quanto rolar a tabela
+    fica vendo o título da coluna, 
+    não funciona em todos os navegadoeres. 
+    E se tiver texto fora da tabela não 
+    afeta na leitura*/
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+    }
     thead, tfoot {
         background-color: gray;
         color: white;
