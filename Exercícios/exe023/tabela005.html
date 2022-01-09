@@ -1,0 +1,137 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de tabelas</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+        width: 500px;
+        border-collapse: collapse;
+    }
+    
+    caption {
+        font-size: 1.3em;
+        font-weight: bolder;
+        padding: 8px;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+
+    /*Para destar uma linha, que é mais simples.*/
+   /* tr.destaque {
+        background-color: chartreuse;
+    }
+    */
+    /*Para colocar em apenas um nome, forma mais difícil*/
+    /*.destaque {
+        background-color: blue;
+    }
+    */
+    /*Como selecionar uma coluna*/
+    col.cnome {
+        background-color: red;
+    }
+    /*Caso queira chamar as colunas separadas*/
+    /* col.csexo, col.cidade{
+        background-color: yellow;
+    }
+    */
+
+    /*Com grupos*/
+    /* col.cgrupo {
+        background-color: gray;
+    }
+    */
+
+    /* com classes, mais funcional*/
+
+    .amarelo {
+        background-color: yellow;
+    }
+
+    .vermelho {
+        background-color: red;
+    }
+
+
+</style>
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+      <!--Chamado por coluna, novidade do HTML5-->
+        <!-- <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade"> 
+            <col class="cprof">
+        </colgroup> -->
+         <!--Agrupando por coluna-->
+       <!-- <colgroup>
+            <col class="cnome"> 
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>-->
+
+        <colgroup>
+            <col class="amarelo"> 
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+        <!--    <col class="vermelho">-->
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col" class="destaque">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td class="destaque">Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td class="destaque">Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr class="destaque">
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr class="destaque">
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Média</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+    </table>
+</body>
+</html>
