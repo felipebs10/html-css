@@ -15,7 +15,8 @@
 <body>
     <h1>Meu primeiro formulário</h1>
     <!-- o autocomplete = Desliga o autocompletar do campo-->
-    <form action="cadasto.php" autocomplete="off">
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <!-- se não colocar nada é o padrão é get-->
         <p><label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome">
             <!-- O name é mais utilizado para o html e php e id para javascript e uso do label-->

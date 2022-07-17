@@ -1,0 +1,37 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <label for="iusu">Usuário: </label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10"
+            placeholder="nome do usuário" autocomplete="username">
+        <!--O required informa que o campo é obrigatório-->
+        <!--minlength e maxlength é utilizado para solicitar requisitos mínimos e máximos-->
+        <!--o placehoder é uma dica do que o usuário tem que preencher-->
+        <!--Tem que usar o autocomplete no formulário e o autocomplete no campo, para ficar mais 
+        fácil de ele sugerir-->
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="15"
+                placeholder="mínimo de 8 caracteres" autocomplete="current-password">
+            <!--o password não deixa ver a senha-->
+            <!--O required informa que o campo é obrigatório-->
+            <!--minlength e maxlength é utilizado para solicitar requisitos mínimos e máximos-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
