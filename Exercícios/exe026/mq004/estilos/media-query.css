@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+/*Typical Device Breakpoints
+-----------------------------
+Pequenas telas: Até 600px
+Celular: de 600px até 768px
+tablet:  de 768 até 992 px
+Desktop: de 992 até 1200px
+Grandes Telas: acima de 1200px
+
+Na pesquisa realizada no w3c continua sendo o mesmo que passado pelo Professor.
+https://www-w3schools-com.translate.goog/howto/howto_css_media_query_breakpoints.asp?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc
+*/
+
+@media print {
+
+    /*Impressão*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+        /*Desnecessário, só par ficar certinho*/
+
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita atráves do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    main,
+    h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+/*Configurações para as telas celular e small, já foi feita no mobile first, outro arquivo CSS*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /*Tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /*Desktop*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    /*Grandes Telas*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+
+    main {
+        width: 700px;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+}
